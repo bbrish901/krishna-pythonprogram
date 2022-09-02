@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'python hello-world.py'
+                sh '172.31.87.43 '
             }
         }
         stage('Test') { 
