@@ -12,13 +12,7 @@ pipeline {
                  sh 'python hello-world.py'
             }
         }
-        stage('Setup') {
-             steps {
-                  dir ('thursday') {
-                  sh 'rm -rf' deleteDir()
-                  }
-               }
-}
+       
         stage('Deploy') { 
             steps {
                 sh 'python hello-world.py'
