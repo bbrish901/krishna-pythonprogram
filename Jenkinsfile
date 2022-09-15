@@ -15,7 +15,7 @@ pipeline {
         stage('Setup') {
              steps {
                   dir ('thursday') {
-                  deleteDir()
+                  sh 'rm -rf'
                   }
                }
 }
