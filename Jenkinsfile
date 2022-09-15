@@ -12,6 +12,11 @@ pipeline {
                  sh 'python hello-world.py'
             }
         }
+        stage('Creating Artifact'){
+        steps{
+            archiveArtifacts artifacts: '**', followSymlinks: false
+        }
+    }
         stage('Deploy') { 
             steps {
                 sh 'python hello-world.py'
