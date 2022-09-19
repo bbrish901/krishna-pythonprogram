@@ -1,7 +1,4 @@
-pipeline {
-    agent { label 'jenkins slave'}
-           
-    stages {
+pipeline {   
         stage('Build') { 
             steps {
                 sh 'python hello-world.py'
@@ -12,10 +9,7 @@ pipeline {
                  sh 'python hello-world.py'
             }
         }
-       stage('Setup') {
-    steps {
-        dir ('thursday') {
-            deleteDir()
+       
         }
     }
 }
