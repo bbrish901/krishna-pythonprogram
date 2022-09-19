@@ -1,23 +1,22 @@
 pipeline 
-agent { any
-    
+agent { any  
     stages {
         stage('Build') { 
             steps {
-                sh 'helloworld.py'
+                sh 'hello-world.py'
                 
             }
         }
        
                  stage('Test'){
         steps{
-             sh 'helloworld.py'
+             sh 'hello-world.py'
             
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'helloworld.py'
+                sh 'hello-world.py'
             }
         }
     }
