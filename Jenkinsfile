@@ -3,20 +3,20 @@ agent  any
     stages {
         stage('Build') { 
             steps {
-                echo 'hello-wold'
+                python 'hello-world.py'
                 
             }
         }
        
                  stage('Test'){
         steps{
-             echo 'hello-world'
+             python 'hello-world.py'
             
             }
         }
         stage('Deploy') { 
             steps {
-                echo 'hello-world'
+                python 'hello-world.py'
             }
         }
     }
