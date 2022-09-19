@@ -1,21 +1,19 @@
-pipeline {   
+pipeline {
+    agent any 
+    stages {
         stage('Build') { 
-            steps {
-                sh 'python hello-world.py'
+                steps { buliding the code }
+               
             }
         }
         stage('Test') { 
-            steps {
-                 sh 'python hello-world.py'
+                steps { testing }
+                
             }
         }
-       
-        }
-    }
-}
         stage('Deploy') { 
-            steps {
-                sh 'python hello-world.py'
+                steps { deploying }
+               
             }
         }
     }
